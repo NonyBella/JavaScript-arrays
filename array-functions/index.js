@@ -49,8 +49,23 @@ function changeFruit(){
     fruit[2]='orange';
     return fruit;
 }
-let result = changeFruit();
-result = ['apple', 'mango', 'orange'];
+let newFruitArray = changeFruit();
+newFruitArray = ['apple', 'mango', 'orange'];
+
+//          Question 4
+function checkMaximumNumber(array){
+let maximumNumber = 0;
+for(let i = 0; i< array.length; i++) {
+    if(array[i] > maximumNumber) {
+        maximumNumber = array[i]
+    }
+}
+
+return maximumNumber;
+
+}
+let result = checkMaximumNumber([]);
+console.log(result);
 
 
 
