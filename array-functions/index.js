@@ -67,6 +67,20 @@ return maximumNumber;
 let result = checkMaximumNumber([]);
 console.log(result);
 
+//          Question5
+function valTimesIndex(array){
+    let newArray = [];
+    for (let i=0; i < array.length; i++){
+        array[i] *= i
+        newArray.push(array[i]);
+        
+    }
+    return newArray;
+    }
+     
+let output = valTimesIndex([]);
+console.log(output);
+
 
 
 
